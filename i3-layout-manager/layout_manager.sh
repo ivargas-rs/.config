@@ -62,7 +62,7 @@ fi
 mkdir -p $LAYOUT_PATH > /dev/null 2>&1
 
 # logs
-LOG_FILE=/tmp/i3_layout_manager.txt
+LOG_FILE=/tmp/i3_layout_manager-rs.txt
 echo "" > "$LOG_FILE"
 
 # #{ ASK FOR THE ACTION
@@ -346,7 +346,7 @@ MATCH ANY" | rofi -i -dmenu -p "How to identify windows? (xprop style)")
   # extract the needed part of the file and add it to the workspace file
   # this part is mostly according to the i3 manual, except we actually put there
   # the information about the split type
-  cat $ALL_WS_FILE | cat - $LAYOUT_FILE > /tmp/tmp.txt && mv /tmp/tmp.txt $LAYOUT_FILE
+  cat $ALL_WS_FILE | cat - $LAYOUT_FILE > /tmp/tmp-rs.txt && mv /tmp/tmp-rs.txt $LAYOUT_FILE
   # add closing bracked at the end
   $VIM_BIN $HEADLESS -nEs -c 'normal Go]}' -c "wqa" -- "$LAYOUT_FILE"
 
