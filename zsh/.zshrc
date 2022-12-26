@@ -57,6 +57,9 @@ function wTEC {
 	sudo ip link set wlp6s0 down
 	sudo netctl start wlp6s0-wTEC
 }
+# RapidSilicon VPN connection
+alias VPN='sudo netExtender -u ivargas -d "arbutussystems.net" vpn.asigrid.com --always-trust vpn.asigrid.com'
+alias cf='clang-format --style=Google -i'
 
 # Path
 PATH=${ZDOTDIR}/bin:$PATH
