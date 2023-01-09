@@ -1,3 +1,7 @@
+if [[ -o login ]]; then
+  startx
+fi
+
 # use vi keybinds
 bindkey -v
 
