@@ -109,6 +109,8 @@ spicetify config color_scheme base16
 spicetify apply
 ```
 
+For work user account the name of the color scheme is `work`. This was done to avoid clashing and being able to have both spotifies open with different colors.
+
 In case spicetify theme breaks install the [community themes](https://github.com/spicetify/spicetify-themes) (`spicetify-themes-git` in the AUR). Then copy:
 ```
 cp /usr/share/spicetify-cli/Themes/Ziro/user.css Themes/Ziro
